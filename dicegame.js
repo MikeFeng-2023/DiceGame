@@ -86,8 +86,8 @@ document.querySelector("#reset-btn").addEventListener("click", function(){
     if(i==6)
       strNum ="six";
     await delay(500);
-      document.querySelector("#player01Dice").src=`/images/${strNum}.jpg`;
-      document.querySelector("#player02Dice").src=`/images/${strNum}.jpg`;
+      document.querySelector("#player01Dice").src=`./images/${strNum}.jpg`;
+      document.querySelector("#player02Dice").src=`./images/${strNum}.jpg`;
 
   }
 }
@@ -119,8 +119,8 @@ function compare(){
   let resultPlay01 = getDiceNumber().split("-");
   let resultPlay02 = getDiceNumber().split("-");
   //console.log(resultPlay01);
-  document.querySelector("#player01Dice").src=`/images/${resultPlay01[0]}.jpg`;
-  document.querySelector("#player02Dice").src=`/images/${resultPlay02[0]}.jpg`;
+  document.querySelector("#player01Dice").src=`./images/${resultPlay01[0]}.jpg`;
+  document.querySelector("#player02Dice").src=`./images/${resultPlay02[0]}.jpg`;
 
   let numPlayer01 = Number(resultPlay01[1]);
   let numPlayer02 = Number(resultPlay02[1]);
