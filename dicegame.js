@@ -90,6 +90,7 @@ document.querySelector("#reset-btn").addEventListener("click", function(){
       document.querySelector("#player02Dice").src=`./images/${strNum}.jpg`;
 
   }
+  await delay(500);
 }
 
 function delay(time){
